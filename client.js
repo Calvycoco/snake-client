@@ -8,6 +8,7 @@ const connect = () => {
   });
   conn.setEncoding("utf8");
   conn.write('Name: Cal')
+  // conn.write('Move: left')
   conn.on("data", (data) => {
     console.log("Received data from server:", data);
   });
